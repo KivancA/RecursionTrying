@@ -1,0 +1,563 @@
+Index: src/NumbersExample.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package PACKAGE_NAME;public class NumbersExample {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/NumbersExample.java b/src/NumbersExample.java
+--- a/src/NumbersExample.java	(revision 7b3749cdc59e48287d68ca6868c39be45557f318)
++++ b/src/NumbersExample.java	(date 1677217969770)
+@@ -1,2 +1,30 @@
+-package PACKAGE_NAME;public class NumbersExample {
++public class NumbersExample {
++    public static void main(String[] args)
++    {
++    print1(1);
++    }
++    static void print1(int n)
++    {
++        System.out.println(n);
++        print2(2);
++    }
++    static void print2(int n)
++    {
++        System.out.println(n);
++        print3(3);
++    }
++    static void print3(int n)
++    {
++        System.out.println(n);
++        print4(4);
++    }
++    static void print4(int n)
++    {
++        System.out.println(n);
++        print5(5);
++    }
++    static void print5(int n)
++    {
++        System.out.println(n);
++    }
+ }
+Index: src/Nto1.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Nto1.java b/src/Nto1.java
+new file mode 100644
+--- /dev/null	(date 1677735044385)
++++ b/src/Nto1.java	(date 1677735044385)
+@@ -0,0 +1,35 @@
++public class Nto1 {
++    public static void main(String[] args) {
++        fun(5);
++        System.out.println("*");
++        funRev(5);
++        System.out.println("*");
++        funBoth(5);
++    }
++    static void fun(int n){
++        //5 4 3 2 1
++        if(n==0){
++            return;
++        }
++        System.out.println(n);
++        fun(n-1);
++    }
++    static void funRev(int n){
++        //1 2 3 4 5
++        if(n==0){
++            return;
++        }
++        funRev(n-1);
++        System.out.println(n);
++    }
++    static void funBoth(int n){
++        //5 4 3 2 1 1 2 3 4 5
++        if(n==0){
++            return;
++        }
++        System.out.println(n);
++        funBoth(n-1);
++        System.out.println(n);
++    }
++
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"90608696-0b0e-4edd-b408-9d203a84b8d3\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"2MAgSSsVKww9JOt4TFSjGaRGmb5\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"90608696-0b0e-4edd-b408-9d203a84b8d3\" name=\"Changes\" comment=\"\" />\r\n      <created>1677215804947</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1677215804947</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7b3749cdc59e48287d68ca6868c39be45557f318)
++++ b/.idea/workspace.xml	(date 1677739313730)
+@@ -1,11 +1,38 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="90608696-0b0e-4edd-b408-9d203a84b8d3" name="Changes" comment="" />
++    <list default="true" id="90608696-0b0e-4edd-b408-9d203a84b8d3" name="Changes" comment="">
++      <change afterPath="$PROJECT_DIR$/src/Concept.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/DigitProduct.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/DigitSum.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Fact.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Nto1.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Palindrome.java" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/src/Reverse.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/BS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BS.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Fibo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fibo.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/NumbersExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumbersExample.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/NumbersExampleRecursion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NumbersExampleRecursion.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
++  </component>
++  <component name="FileTemplateManagerImpl">
++    <option name="RECENT_TEMPLATES">
++      <list>
++        <option value="Class" />
++      </list>
++    </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="MarkdownSettingsMigration">
++    <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="2MAgSSsVKww9JOt4TFSjGaRGmb5" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+@@ -13,12 +40,70 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
++  <component name="RecentsManager">
++    <key name="CopyClassDialog.RECENTS_KEY">
++      <recent name="" />
++    </key>
++  </component>
++  <component name="RunManager" selected="Application.Palindrome">
++    <configuration name="Concept" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Concept" />
++      <module name="RecursionTrying" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="DigitProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="DigitProduct" />
++      <module name="RecursionTrying" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="DigitSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="DigitSum" />
++      <module name="RecursionTrying" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="NumbersExample" type="Application" factoryName="Application" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="NumbersExample" />
++      <module name="RecursionTrying" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Palindrome" />
++      <module name="RecursionTrying" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <configuration name="Reverse" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="Reverse" />
++      <module name="RecursionTrying" />
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Palindrome" />
++        <item itemvalue="Application.Reverse" />
++        <item itemvalue="Application.Concept" />
++        <item itemvalue="Application.DigitProduct" />
++        <item itemvalue="Application.DigitSum" />
++      </list>
++    </recent_temporary>
++  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -30,4 +115,26 @@
+     </task>
+     <servers />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="java-line">
++          <url>file://$PROJECT_DIR$/src/Concept.java</url>
++          <line>9</line>
++          <option name="timeStamp" value="3" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
++  </component>
+ </project>
+\ No newline at end of file
+Index: src/DigitSum.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/DigitSum.java b/src/DigitSum.java
+new file mode 100644
+--- /dev/null	(date 1677736254827)
++++ b/src/DigitSum.java	(date 1677736254827)
+@@ -0,0 +1,12 @@
++public class DigitSum {
++    public static void main(String[] args) {
++        int ans=sum(1342);
++        System.out.println(ans);
++    }
++    static int sum(int n){
++        if(n==0){
++            return 0;
++        }
++        return(n%10)+sum(n/10);
++    }
++}
+Index: src/Fibo.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package PACKAGE_NAME;public class Fibo {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Fibo.java b/src/Fibo.java
+--- a/src/Fibo.java	(revision 7b3749cdc59e48287d68ca6868c39be45557f318)
++++ b/src/Fibo.java	(date 1677226302890)
+@@ -1,2 +1,16 @@
+-package PACKAGE_NAME;public class Fibo {
++public class Fibo {
++    public static void main(String[] args) {
++        int ans=fibo(4);
++        System.out.println(ans);
++
++    }
++    static int fibo(int n)
++    {
++        //base cond
++        if(n<2){
++            return n;
++        }
++
++        return fibo(n-1)+fibo(n-2);
++    }
+ }
+Index: src/NumbersExampleRecursion.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class NumbersExample {\r\n    public static void main(String[] args)\r\n    {\r\n    print1(1);\r\n    }\r\n    static void print1(int n)\r\n    {\r\n        System.out.println(n);\r\n        print2(2);\r\n    }\r\n    static void print2(int n)\r\n    {\r\n        System.out.println(n);\r\n        print3(3);\r\n    }\r\n    static void print3(int n)\r\n    {\r\n        System.out.println(n);\r\n        print4(4);\r\n    }\r\n    static void print4(int n)\r\n    {\r\n        System.out.println(n);\r\n        print5(5);\r\n    }\r\n    static void print5(int n)\r\n    {\r\n        System.out.println(n);\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/NumbersExampleRecursion.java b/src/NumbersExampleRecursion.java
+--- a/src/NumbersExampleRecursion.java	(revision 7b3749cdc59e48287d68ca6868c39be45557f318)
++++ b/src/NumbersExampleRecursion.java	(date 1677229583094)
+@@ -1,30 +1,24 @@
+-public class NumbersExample {
++public class NumbersExampleRecursion {
+     public static void main(String[] args)
+-    {
+-    print1(1);
+-    }
+-    static void print1(int n)
++    //write a func takes a num and prints it
++            //print first 5 num:1 2 3 4 5
+     {
+-        System.out.println(n);
+-        print2(2);
++        print(1);
+     }
+-    static void print2(int n)
+-    {
+-        System.out.println(n);
+-        print3(3);
+-    }
+-    static void print3(int n)
+-    {
+-        System.out.println(n);
+-        print4(4);
+-    }
+-    static void print4(int n)
+-    {
++
++    static void print(int n) {
++        //base condition
++        if(n==5)
++        {
++            System.out.println(5);
++            return;
++        }
++        //body
+         System.out.println(n);
+-        print5(5);
+-    }
+-    static void print5(int n)
+-    {
+-        System.out.println(n);
++        //recursive call
++        //if you are calling a func again and again,you can treat it as a seperate call in the stack
++        //tail recursion ---the last function call
++        print(n + 1);
++
+     }
+ }
+Index: src/Fact.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Fact.java b/src/Fact.java
+new file mode 100644
+--- /dev/null	(date 1677735800632)
++++ b/src/Fact.java	(date 1677735800632)
+@@ -0,0 +1,13 @@
++public class Fact {
++    public static void main(String[] args) {
++        int ans=fact(5);
++        System.out.println(ans);
++
++    }
++    static  int fact(int n){
++        if(n<=1){
++            return 1;
++        }
++        return n * fact(n-1);
++    }
++}
+Index: src/Concept.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Concept.java b/src/Concept.java
+new file mode 100644
+--- /dev/null	(date 1677737005508)
++++ b/src/Concept.java	(date 1677737005508)
+@@ -0,0 +1,15 @@
++public class Concept {
++    public static void main(String[] args) {
++    fun(5);
++    }
++    static void fun(int n){
++        if(n==0){
++            return;
++        }
++        System.out.println(n);
++        //fun(n--); //-- stackoverflow
++        fun(--n);
++        //n-- vs --n
++        //--n ----> substract first then pass
++    }
++}
+Index: src/DigitProduct.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/DigitProduct.java b/src/DigitProduct.java
+new file mode 100644
+--- /dev/null	(date 1677736467491)
++++ b/src/DigitProduct.java	(date 1677736467491)
+@@ -0,0 +1,15 @@
++public class DigitProduct {
++    public static void main(String[] args) {
++        int ans= prod(1342);
++        // if it include 0 ans will be 0
++        int ans2=prod(707);
++        System.out.println(ans);
++        System.out.println(ans2);
++    }
++    static int prod(int n){
++        if(n%10==n){
++            return n;
++        }
++        return(n%10) * prod(n/10);
++    }
++}
+Index: src/BS.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package PACKAGE_NAME;public class BS {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/BS.java b/src/BS.java
+--- a/src/BS.java	(revision 7b3749cdc59e48287d68ca6868c39be45557f318)
++++ b/src/BS.java	(date 1677232268033)
+@@ -1,2 +1,29 @@
+-package PACKAGE_NAME;public class BS {
++
++
++public class BS {
++    public static void main(String[] args) {
++        int[] arr={1,2,3,4,55,66,78};
++        int target=4;
++        System.out.println(search(arr,target,0, arr.length)-1);
++
++    }
++    static int search(int[]arr,int target,int s,int e) {
++        /*int s=0;
++        int e= arr.length-1;
++
++        search(arr,target);
++*/
++        if(s>e){
++            return -1;
++        }
++        int m = s +(e-s)/2;
++
++        if(arr[m]==target){
++            return m;
++        }
++        if (target < arr[m]) {
++            return search(arr,target,s,m-1);
++        }
++        return search(arr, target, m+1, e);
++    }
+ }
+Index: src/Reverse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Reverse.java b/src/Reverse.java
+new file mode 100644
+--- /dev/null	(date 1677738939011)
++++ b/src/Reverse.java	(date 1677738939011)
+@@ -0,0 +1,30 @@
++public class Reverse {
++    public static void main(String[] args) {
++        rev1(4567);
++        System.out.println(sum);
++        System.out.println(rev2(1234));
++    }
++    static int sum=0;
++    static void rev1(int n){
++        if(n==0){
++            return;
++        }
++        int rem=n%10;
++        sum=sum*10 +rem;
++        rev1(n/10);
++    }
++    static int rev2(int n){
++        //sometimes you might need some additional variables in the argument
++        //in that case,make another function
++        int digits=(int)(Math.log10(n))+1;
++        return helper(n,digits);
++    }
++    private static int helper(int n,int digits){
++        if(n%10==n){
++            return n;
++        }
++        int rem=n%10;
++        return rem*(int)Math.pow(10,digits-1) + helper(n/10,digits-1);
++    }
++}
++
+Index: src/Palindrome.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Palindrome.java b/src/Palindrome.java
+new file mode 100644
+--- /dev/null	(date 1677739324203)
++++ b/src/Palindrome.java	(date 1677739324203)
+@@ -0,0 +1,25 @@
++public class Palindrome {
++    public static void main(String[] args) {
++        System.out.println(palin(123321)); //palindrome -true
++        System.out.println(palin(15234321));// not palindroem - false
++    }
++
++    static int rev(int n){
++        //sometimes you might need some additional variables in the argument
++        //in that case,make another function
++        int digits=(int)(Math.log10(n))+1;
++        return helper(n,digits);
++    }
++    private static int helper(int n,int digits){
++        if(n%10==n){
++            return n;
++        }
++        int rem=n%10;
++        return rem*(int)Math.pow(10,digits-1) + helper(n/10,digits-1);
++    }
++    static boolean palin(int n){
++        return n==rev(n);
++
++    }
++}
++
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Main {\r\n    public static void main(String[] args) {\r\n        System.out.println(\"Hello world!\");\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	(revision 7b3749cdc59e48287d68ca6868c39be45557f318)
++++ b/src/Main.java	(date 1677217751486)
+@@ -1,5 +1,10 @@
+ public class Main {
+-    public static void main(String[] args) {
+-        System.out.println("Hello world!");
++    public static void main(String[] args)
++    {
++        NumbersExample.print1(1);
++    }
++    static  void message()
++    {
++        System.out.println( "hello");
+     }
+ }
+\ No newline at end of file
